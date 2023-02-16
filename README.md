@@ -9,3 +9,6 @@
 
 ### ASCIINEMA STEP 6
 [![asciicast](https://asciinema.org/a/560018.svg)](https://asciinema.org/a/560018)
+
+### ASCIINEMA STEP 7
+[![asciicast](https://asciinema.org/a/560253.svg)](https://asciinema.org/a/560253)

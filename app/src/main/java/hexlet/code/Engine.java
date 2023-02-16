@@ -2,6 +2,7 @@ package hexlet.code;
 
 import hexlet.code.game.GameCalc;
 import hexlet.code.game.GameEven;
+import hexlet.code.game.GameGCD;
 
 public class Engine {
     public static void newGame(int gameNumber) {
@@ -30,6 +31,14 @@ public class Engine {
             case 3 -> {
                 for (int i = 0; i < 3; i++) {
                     isWinGame = GameCalc.gamePlay();
+                    if (!isWinGame) {
+                        break;
+                    }
+                }
+            }
+            case 4 -> {
+                for (int i = 0; i < 3; i++) {
+                    isWinGame = GameGCD.gamePlay();
                     if (!isWinGame) {
                         break;
                     }
