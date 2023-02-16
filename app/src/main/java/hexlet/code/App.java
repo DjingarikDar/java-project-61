@@ -9,14 +9,7 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
-
-        int choice = scanner.nextInt();
-        Game game = new Game();
-        if (choice != 0) {
-            game.setGameNumber(choice);
-            game.setGamerName(Cli.greeting());
-            game.startGame();
-            game.endGame();
-        }
+        int choiceGame = scanner.nextInt();
+        Engine.newGame(choiceGame);
     }
 }
