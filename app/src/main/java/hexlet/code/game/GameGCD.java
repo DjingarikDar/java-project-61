@@ -13,7 +13,7 @@ public class GameGCD {
         String question;
         String correctAnswer;
         String answer;
-        question = Question.getQuestionString(String.valueOf(number1), " ", String.valueOf(number2));
+        question = Question.getQuestionString(String.valueOf(number1), String.valueOf(number2));
         correctAnswer = String.valueOf(GCD.getGCD(number1, number2));
         System.out.println(question);
         answer = Answer.getAnswer();

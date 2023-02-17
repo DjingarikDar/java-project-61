@@ -16,15 +16,15 @@ public class GameCalc {
         String answer;
         switch (operator) {
             case 0 -> {
-                question = Question.getQuestionString(String.valueOf(number1), " + ", String.valueOf(number2));
+                question = Question.getQuestionString(String.valueOf(number1), "+", String.valueOf(number2));
                 correctAnswer = String.valueOf(number1 + number2);
             }
             case 1 -> {
-                question = Question.getQuestionString(String.valueOf(number1), " - ", String.valueOf(number2));
+                question = Question.getQuestionString(String.valueOf(number1), "-", String.valueOf(number2));
                 correctAnswer = String.valueOf(number1 - number2);
             }
             case 2 -> {
-                question = Question.getQuestionString(String.valueOf(number1), " * ", String.valueOf(number2));
+                question = Question.getQuestionString(String.valueOf(number1), "*", String.valueOf(number2));
                 correctAnswer = String.valueOf(number1 * number2);
             }
             default -> {
