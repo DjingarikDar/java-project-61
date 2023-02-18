@@ -8,9 +8,11 @@ import hexlet.code.ResultTest;
 public class GameCalc {
     public static boolean gamePlay() {
         System.out.println("What is the result of the expression?");
-        int operator = (int) (3 * Math.random());
-        int number1 = (int) (100 * Math.random());
-        int number2 = (int) (100 * Math.random());
+        int rangeForRandom = 3;
+        int operator = (int) (rangeForRandom * Math.random());
+        rangeForRandom = 100;
+        int number1 = (int) (rangeForRandom * Math.random());
+        int number2 = (int) (rangeForRandom * Math.random());
         String question;
         String correctAnswer;
         String answer;

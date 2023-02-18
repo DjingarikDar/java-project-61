@@ -18,7 +18,8 @@ public class PrimeNumber {
         for (int i = 2; i < numberArray.length; i += 2) {
             numberArray[i] = 0;
         }
-        for (int i = 3; i * i < numberArray.length; i += 2) {
+        int startIndex = 3;
+        for (int i = startIndex; i * i < numberArray.length; i += 2) {
             if (numberArray[i] == 1) {
                 for (int j = i + i; j < numberArray.length; j = j + i) {
                     numberArray[j] = 0;

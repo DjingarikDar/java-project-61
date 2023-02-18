@@ -7,14 +7,16 @@ import hexlet.code.ResultTest;
 public class GameProgression {
     public static boolean gamePlay() {
         System.out.println("What number is missing in the progression?");
-        int number = (int) (100 * Math.random());
-        int increment = (int) (10 * Math.random());
-        int index = (int) (10 * Math.random());
+        int rangeForRandom = 100;
+        int number = (int) (rangeForRandom * Math.random());
+        rangeForRandom = 10;
+        int increment = (int) (rangeForRandom * Math.random());
+        int index = (int) (rangeForRandom * Math.random());
         String question;
         String correctAnswer;
         String answer;
         String[] progression = new  String[10];
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < progression.length; i++) {
             progression[i] = String.valueOf(number);
             number += increment;
         }

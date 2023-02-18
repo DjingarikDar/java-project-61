@@ -7,7 +7,8 @@ public class GameEven {
     public static boolean gamePlay() {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         String correctAnswer;
-        int testNumber = (int) (100 * Math.random());
+        int rangeForRandom = 100;
+        int testNumber = (int) (rangeForRandom * Math.random());
         System.out.println(Question.getQuestionString(String.valueOf(testNumber)));
         String answer = Answer.getAnswer();
         if (isEven(testNumber)) {

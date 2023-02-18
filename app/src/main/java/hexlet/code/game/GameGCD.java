@@ -8,8 +8,9 @@ import hexlet.code.ResultTest;
 public class GameGCD {
     public static boolean gamePlay() {
         System.out.println("Find the greatest common divisor of given numbers.");
-        int number1 = (int) (100 * Math.random());
-        int number2 = (int) (100 * Math.random());
+        int rangeForNumber = 100;
+        int number1 = (int) (rangeForNumber * Math.random());
+        int number2 = (int) (rangeForNumber * Math.random());
         String question;
         String correctAnswer;
         String answer;

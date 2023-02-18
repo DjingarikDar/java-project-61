@@ -7,11 +7,11 @@ import hexlet.code.game.GamePrime;
 import hexlet.code.game.GameProgression;
 
 public class Engine {
-    public static void newGame(int gameNumber) {
-        if (gameNumber > 0) {
+    public static void newGame(int choiceGame) {
+        if (choiceGame > 0) {
             String gamerName = getGamerName();
-            if (gameNumber > 1) {
-                boolean isWinGame = play(gameNumber);
+            if (choiceGame > 1) {
+                boolean isWinGame = play(choiceGame);
                 endGame(isWinGame, gamerName);
             }
         }
@@ -19,11 +19,12 @@ public class Engine {
     public static String getGamerName() {
         return  Cli.greeting();
     }
-    public static boolean play(int gameNumber) {
+    public static boolean play(int choiceGame) {
         boolean isWinGame = false;
-        switch (gameNumber) {
+        int numberOfRepetition = 3;
+        switch (choiceGame) {
             case 2 -> {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < numberOfRepetition; i++) {
                     isWinGame = GameEven.gamePlay();
                     if (!isWinGame) {
                         break;
@@ -31,7 +32,7 @@ public class Engine {
                 }
             }
             case 3 -> {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < numberOfRepetition; i++) {
                     isWinGame = GameCalc.gamePlay();
                     if (!isWinGame) {
                         break;
@@ -39,7 +40,7 @@ public class Engine {
                 }
             }
             case 4 -> {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < numberOfRepetition; i++) {
                     isWinGame = GameGCD.gamePlay();
                     if (!isWinGame) {
                         break;
@@ -47,7 +48,7 @@ public class Engine {
                 }
             }
             case 5 -> {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < numberOfRepetition; i++) {
                     isWinGame = GameProgression.gamePlay();
                     if (!isWinGame) {
                         break;
@@ -55,7 +56,7 @@ public class Engine {
                 }
             }
             case 6 -> {
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < numberOfRepetition; i++) {
                     isWinGame = GamePrime.gamePlay();
                     if (!isWinGame) {
                         break;
