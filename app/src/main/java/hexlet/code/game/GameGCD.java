@@ -1,16 +1,13 @@
 package hexlet.code.game;
 
-import hexlet.code.Answer;
-import hexlet.code.GCD;
-import hexlet.code.Question;
-import hexlet.code.ResultTest;
+import hexlet.code.*;
 
 public class GameGCD {
     public static boolean gamePlay() {
         System.out.println("Find the greatest common divisor of given numbers.");
-        int rangeForNumber = 100;
-        int number1 = (int) (rangeForNumber * Math.random());
-        int number2 = (int) (rangeForNumber * Math.random());
+        final int rangeOfRandomNumber = 100;
+        int number1 = Random.getRandom(rangeOfRandomNumber);
+        int number2 = Random.getRandom(rangeOfRandomNumber);
         String question;
         String correctAnswer;
         String answer;

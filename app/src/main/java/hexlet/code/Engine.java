@@ -21,10 +21,10 @@ public class Engine {
     }
     public static boolean play(int choiceGame) {
         boolean isWinGame = false;
-        int numberOfRepetition = 3;
+        final int numberOfRepetitions = 3;
         switch (choiceGame) {
             case 2 -> {
-                for (int i = 0; i < numberOfRepetition; i++) {
+                for (int i = 0; i < numberOfRepetitions; i++) {
                     isWinGame = GameEven.gamePlay();
                     if (!isWinGame) {
                         break;
@@ -32,7 +32,7 @@ public class Engine {
                 }
             }
             case 3 -> {
-                for (int i = 0; i < numberOfRepetition; i++) {
+                for (int i = 0; i < numberOfRepetitions; i++) {
                     isWinGame = GameCalc.gamePlay();
                     if (!isWinGame) {
                         break;
@@ -40,7 +40,7 @@ public class Engine {
                 }
             }
             case 4 -> {
-                for (int i = 0; i < numberOfRepetition; i++) {
+                for (int i = 0; i < numberOfRepetitions; i++) {
                     isWinGame = GameGCD.gamePlay();
                     if (!isWinGame) {
                         break;
@@ -48,7 +48,7 @@ public class Engine {
                 }
             }
             case 5 -> {
-                for (int i = 0; i < numberOfRepetition; i++) {
+                for (int i = 0; i < numberOfRepetitions; i++) {
                     isWinGame = GameProgression.gamePlay();
                     if (!isWinGame) {
                         break;
@@ -56,7 +56,7 @@ public class Engine {
                 }
             }
             case 6 -> {
-                for (int i = 0; i < numberOfRepetition; i++) {
+                for (int i = 0; i < numberOfRepetitions; i++) {
                     isWinGame = GamePrime.gamePlay();
                     if (!isWinGame) {
                         break;

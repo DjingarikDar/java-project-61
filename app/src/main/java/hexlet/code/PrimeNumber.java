@@ -4,6 +4,7 @@ import static java.util.Arrays.fill;
 
 public class PrimeNumber {
     public static int[] getPrimeArray(int endNumber) {
+        final int startIndex = 3;
         if (endNumber < 1) {
             return new int[0];
         }
@@ -18,7 +19,6 @@ public class PrimeNumber {
         for (int i = 2; i < numberArray.length; i += 2) {
             numberArray[i] = 0;
         }
-        int startIndex = 3;
         for (int i = startIndex; i * i < numberArray.length; i += 2) {
             if (numberArray[i] == 1) {
                 for (int j = i + i; j < numberArray.length; j = j + i) {

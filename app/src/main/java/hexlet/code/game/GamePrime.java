@@ -11,8 +11,8 @@ import org.apache.commons.lang3.ArrayUtils;
 public class GamePrime {
     public static boolean gamePlay() {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-        int range = 100;
-        int number = Random.getRandom(range);
+        final int rangeForNumber = 100;
+        int number = Random.getRandom(rangeForNumber);
         int[] primeNumberArray = PrimeNumber.getPrimeArray(number);
         String question;
         String correctAnswer;
