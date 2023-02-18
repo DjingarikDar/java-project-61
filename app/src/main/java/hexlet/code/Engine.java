@@ -7,11 +7,11 @@ import hexlet.code.game.GamePrime;
 import hexlet.code.game.GameProgression;
 
 public class Engine {
-    public static void newGame(int choiceGame) {
-        if (choiceGame > 0) {
+    public static void newGame(int gameNumber) {
+        if (gameNumber > 0) {
             String gamerName = getGamerName();
-            if (choiceGame > 1) {
-                boolean isWinGame = play(choiceGame);
+            if (gameNumber > 1) {
+                boolean isWinGame = play(gameNumber);
                 endGame(isWinGame, gamerName);
             }
         }
@@ -19,10 +19,10 @@ public class Engine {
     public static String getGamerName() {
         return  Cli.greeting();
     }
-    public static boolean play(int choiceGame) {
+    public static boolean play(int gameNumber) {
         boolean isWinGame = false;
         final int numberOfRepetitions = 3;
-        switch (choiceGame) {
+        switch (gameNumber) {
             case 2 -> {
                 for (int i = 0; i < numberOfRepetitions; i++) {
                     isWinGame = GameEven.gamePlay();

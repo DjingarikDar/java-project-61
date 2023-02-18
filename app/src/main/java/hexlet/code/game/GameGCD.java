@@ -1,6 +1,10 @@
 package hexlet.code.game;
 
-import hexlet.code.*;
+import hexlet.code.Answer;
+import hexlet.code.GCD;
+import hexlet.code.Question;
+import hexlet.code.Random;
+import hexlet.code.ResultTest;
 
 public class GameGCD {
     public static boolean gamePlay() {

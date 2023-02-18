@@ -2,23 +2,26 @@ package hexlet.code.game;
 
 import hexlet.code.Answer;
 import hexlet.code.Question;
+import hexlet.code.Random;
 import hexlet.code.ResultTest;
 
 public class GameProgression {
     public static boolean gamePlay() {
         System.out.println("What number is missing in the progression?");
-        int rangeForRandom = 100;
-        int number = (int) (rangeForRandom * Math.random());
-        rangeForRandom = 10;
-        int increment = (int) (rangeForRandom * Math.random());
-        int index = (int) (rangeForRandom * Math.random());
+        final int rangeOfRandomNumber = 100;
+        int startNumber = Random.getRandom(rangeOfRandomNumber);
+        final int rangeOfRandomIncrement = 20;
+        int increment = Random.getRandom(rangeOfRandomIncrement);
+        final int rangeOfRandomIndex = 10;
+        int index = Random.getRandom(rangeOfRandomIndex);
         String question;
         String correctAnswer;
         String answer;
-        String[] progression = new  String[10];
+        final int sizeOfProgression = rangeOfRandomIndex;
+        String[] progression = new  String[sizeOfProgression];
         for (int i = 0; i < progression.length; i++) {
-            progression[i] = String.valueOf(number);
-            number += increment;
+            progression[i] = String.valueOf(startNumber);
+            startNumber += increment;
         }
         correctAnswer = progression[index];
         progression[index] = "..";
