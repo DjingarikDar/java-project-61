@@ -19,7 +19,7 @@ public class GameProgression {
             number += increment;
         }
         correctAnswer = progression[index];
-        progression[index] = "...";
+        progression[index] = "..";
         question = Question.getQuestionString(progression);
         System.out.println(question);
         answer = Answer.getAnswer();
