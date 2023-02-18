@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.game.GameCalc;
 import hexlet.code.game.GameEven;
 import hexlet.code.game.GameGCD;
+import hexlet.code.game.GamePrime;
 import hexlet.code.game.GameProgression;
 
 public class Engine {
@@ -48,6 +49,14 @@ public class Engine {
             case 5 -> {
                 for (int i = 0; i < 3; i++) {
                     isWinGame = GameProgression.gamePlay();
+                    if (!isWinGame) {
+                        break;
+                    }
+                }
+            }
+            case 6 -> {
+                for (int i = 0; i < 3; i++) {
+                    isWinGame = GamePrime.gamePlay();
                     if (!isWinGame) {
                         break;
                     }

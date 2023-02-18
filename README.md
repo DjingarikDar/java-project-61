@@ -13,5 +13,8 @@
 ### ASCIINEMA STEP 7
 [![asciicast](https://asciinema.org/a/560253.svg)](https://asciinema.org/a/560253)
 
-### ACCIINEMA STEP 8
+### ASCIINEMA STEP 8
 [![asciicast](https://asciinema.org/a/560540.svg)](https://asciinema.org/a/560540)
+
+### ASCIINEMA STEP 9
+[![asciicast](https://asciinema.org/a/560736.svg)](https://asciinema.org/a/560736)
